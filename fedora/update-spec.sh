@@ -3,7 +3,7 @@ set -euo pipefail
 
 repo='https://downloads.claude.ai/claude-desktop/apt/stable'
 script_dir="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
-spec="${1:-${script_dir}/claude.spec}"
+spec="${1:-${script_dir}/claude-desktop.spec}"
 
 latest_for_arch() {
   local deb_arch="$1"

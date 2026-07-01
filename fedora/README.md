@@ -1,4 +1,4 @@
-# claude RPM packaging
+# claude-desktop RPM packaging
 
 Fedora RPM packaging for Anthropic's official Claude Desktop Linux beta `.deb`.
 
@@ -20,7 +20,7 @@ rpmbuild/RPMS/
 Install it with:
 
 ```sh
-sudo dnf install ./rpmbuild/RPMS/$(uname -m)/claude-*.rpm
+sudo dnf install ./rpmbuild/RPMS/$(uname -m)/claude-desktop-*.rpm
 ```
 
 ## Cowork dependencies

@@ -2,7 +2,7 @@
 set -euo pipefail
 
 script_dir="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
-spec="${1:-${script_dir}/claude.spec}"
+spec="${1:-${script_dir}/claude-desktop.spec}"
 topdir="${RPM_TOPDIR:-${script_dir}/rpmbuild}"
 
 need() {
@@ -38,7 +38,7 @@ case "${rpm_arch}" in
 esac
 
 mkdir -p "${topdir}"/{BUILD,BUILDROOT,RPMS,SOURCES,SPECS,SRPMS}
-cp "${spec}" "${topdir}/SPECS/claude.spec"
+cp "${spec}" "${topdir}/SPECS/claude-desktop.spec"
 
 url="https://downloads.claude.ai/claude-desktop/apt/stable/pool/main/c/claude-desktop/${source_name}"
 if [[ ! -f "${topdir}/SOURCES/${source_name}" ]]; then
@@ -49,7 +49,7 @@ printf '%s  %s\n' "${sha}" "${topdir}/SOURCES/${source_name}" | sha256sum -c -
 
 rpmbuild -bb \
   --define "_topdir ${topdir}" \
-  "${topdir}/SPECS/claude.spec"
+  "${topdir}/SPECS/claude-desktop.spec"
 
 printf '\nBuilt RPMs:\n'
 find "${topdir}/RPMS" -type f -name '*.rpm' -print

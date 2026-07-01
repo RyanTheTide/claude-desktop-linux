@@ -4,7 +4,7 @@
 %global sha256_x86_64 f4bd78545200877b591179838de7ad7a577df6ed2e845969dd25690efc5c85c7
 %global sha256_aarch64 658acbff14bd9c35d795ede46f097fca79d433ac4af792cdd6486acd3adc6f2e
 
-Name:           claude
+Name:           claude-desktop
 Version:        1.17377.1
 Release:        1%{?dist}
 Summary:        Desktop application for Claude.ai, repackaged from the official Debian package
@@ -59,8 +59,8 @@ Recommends:     xdg-desktop-portal-gnome
 Recommends:     xdg-desktop-portal-gtk
 Recommends:     xdg-desktop-portal-kde
 
-Provides:       claude-desktop = %{version}-%{release}
-Conflicts:      claude-desktop
+Provides:       claude = %{version}-%{release}
+Obsoletes:      claude < %{version}-%{release}
 
 %description
 Claude Desktop packaged for Fedora from Anthropic's official Debian package.
