@@ -1,0 +1,8 @@
+/fedora/rpmbuild/
+*.rpm
+*.pkg.tar.zst
+*.pkg.tar.zst.sig
+*.src.tar.gz
+*.src.tar.gz.sig
+pkg/
+src/
