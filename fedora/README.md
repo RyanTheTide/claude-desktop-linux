@@ -39,6 +39,12 @@ test -e /dev/vhost-vsock || sudo modprobe vhost_vsock
 
 Then restart Claude.
 
+## Desktop integration
+
+The RPM recommends `gnome-keyring` for secret storage on GNOME and compatible
+desktops. KDE users can install `kwallet` and `xdg-desktop-portal-kde` if they
+prefer KDE-native credential and portal integration.
+
 ## Updating
 
 ```sh

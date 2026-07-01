@@ -52,12 +52,12 @@ Requires:       qemu-system-aarch64-core
 %endif
 
 Recommends:     gnome-keyring
-Recommends:     kwallet
 Recommends:     libayatana-appindicator-gtk3
 Recommends:     pipewire-pulseaudio
 Recommends:     xdg-desktop-portal-gnome
 Recommends:     xdg-desktop-portal-gtk
-Recommends:     xdg-desktop-portal-kde
+Suggests:       kwallet
+Suggests:       xdg-desktop-portal-kde
 
 Provides:       claude = %{version}-%{release}
 Obsoletes:      claude < %{version}-%{release}
