@@ -59,9 +59,6 @@ Recommends:     xdg-desktop-portal-gtk
 Suggests:       kwallet
 Suggests:       xdg-desktop-portal-kde
 
-Provides:       claude = %{version}-%{release}
-Obsoletes:      claude < %{version}-%{release}
-
 %description
 Claude Desktop packaged for Fedora from Anthropic's official Debian package.
 The package depends on Fedora's QEMU, firmware, and virtiofsd packages so
