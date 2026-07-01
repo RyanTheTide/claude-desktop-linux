@@ -1,14 +1,14 @@
-# claude
+# claude-desktop
 
 Arch Linux PKGBUILD for Anthropic's official Claude Desktop Linux beta `.deb`.
 
-This AUR package is named `claude` for discoverability and AUR namespace
-compatibility. It installs Anthropic's upstream `claude-desktop` application
-files and provides `claude-desktop` for package dependency resolution.
+This GitHub-hosted PKGBUILD builds a package named `claude-desktop`, matching
+Anthropic's upstream package name.
 
-The multi-distribution packaging repository lives at:
+The AUR package is named `claude` because another AUR package already owns the
+`claude-desktop` package name:
 
-https://github.com/RyanTheTide/claude-desktop-linux
+https://aur.archlinux.org/packages/claude
 
 ## Build and install
 
@@ -20,7 +20,7 @@ To build first and install with pacman manually:
 
 ```sh
 makepkg -s
-sudo pacman -U claude-*.pkg.tar.zst
+sudo pacman -U claude-desktop-*.pkg.tar.zst
 ```
 
 ## Cowork virtualization support

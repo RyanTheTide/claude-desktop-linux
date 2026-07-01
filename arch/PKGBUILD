@@ -1,6 +1,6 @@
 # Maintainer: RyanTheTide <ryanthetide@gmail.com>
 
-pkgname=claude
+pkgname=claude-desktop
 _pkgname=claude-desktop
 pkgver=1.17377.1
 pkgrel=1
@@ -45,9 +45,8 @@ optdepends=(
   'xdg-desktop-portal-gtk: portal backend for GTK desktops'
   'xdg-desktop-portal-kde: portal backend for KDE Plasma'
 )
-provides=("${_pkgname}")
 conflicts=(
-  "${_pkgname}"
+  'claude'
   'claude-desktop-bin'
   'claude-desktop-official-bin'
   'claude-desktop-deb-bin'

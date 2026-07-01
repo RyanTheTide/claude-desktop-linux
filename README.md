@@ -10,7 +10,7 @@ adds community packaging for Arch Linux and Fedora.
 
 | Distribution | Directory | Status |
 | --- | --- | --- |
-| Arch Linux | [`arch`](arch/) | AUR package `claude`; installs the upstream `claude-desktop` app and provides `claude-desktop` |
+| Arch Linux | [`arch`](arch/) | GitHub-hosted `claude-desktop` PKGBUILD; AUR package remains `claude` |
 | Fedora | [`fedora`](fedora/) | Local `claude-desktop` RPM build from the official Debian package |
 | Debian / Ubuntu | [`debian`](debian/) | Official Anthropic apt repository installer |
 
@@ -45,9 +45,10 @@ Then restart Claude Desktop.
 ## Redistribution note
 
 These package recipes download Anthropic's official artifacts at build or
-install time. They do not redistribute Claude Desktop binaries. The Fedora and
-Debian packages are named `claude-desktop`; the AUR package remains `claude`
-because another AUR package already owns the `claude-desktop` package name.
+install time. They do not redistribute Claude Desktop binaries. The GitHub
+Arch, Fedora, and Debian packages are named `claude-desktop`; the AUR package
+remains `claude` because another AUR package already owns the `claude-desktop`
+package name.
 
 Claude Desktop is proprietary software owned by Anthropic. Review Anthropic's
 terms before using or redistributing packaging that installs it.

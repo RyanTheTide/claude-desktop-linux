@@ -1,9 +1,9 @@
-pkgbase = claude
+pkgbase = claude-desktop
 	pkgdesc = Desktop application for Claude.ai, repackaged from the official Debian package
 	pkgver = 1.17377.1
 	pkgrel = 1
 	url = https://claude.ai
-	install = claude.install
+	install = claude-desktop.install
 	arch = x86_64
 	arch = aarch64
 	license = custom
@@ -32,8 +32,7 @@ pkgbase = claude
 	optdepends = xdg-desktop-portal-gnome: portal backend for GNOME
 	optdepends = xdg-desktop-portal-gtk: portal backend for GTK desktops
 	optdepends = xdg-desktop-portal-kde: portal backend for KDE Plasma
-	provides = claude-desktop
-	conflicts = claude-desktop
+	conflicts = claude
 	conflicts = claude-desktop-bin
 	conflicts = claude-desktop-official-bin
 	conflicts = claude-desktop-deb-bin
@@ -50,4 +49,4 @@ pkgbase = claude
 	depends_aarch64 = qemu-system-aarch64
 	sha256sums_aarch64 = 658acbff14bd9c35d795ede46f097fca79d433ac4af792cdd6486acd3adc6f2e
 
-pkgname = claude
+pkgname = claude-desktop
