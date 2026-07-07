@@ -1,11 +1,11 @@
 %global debug_package %{nil}
 %global _missing_build_ids_terminate_build 0
 %global claude_libdir %{_prefix}/lib/claude-desktop
-%global sha256_x86_64 f4bd78545200877b591179838de7ad7a577df6ed2e845969dd25690efc5c85c7
-%global sha256_aarch64 658acbff14bd9c35d795ede46f097fca79d433ac4af792cdd6486acd3adc6f2e
+%global sha256_x86_64 8f314ad1a80aab52711a8eaabc06aae48fb341f0adea4a0d7264db5cab9d0536
+%global sha256_aarch64 4820b989a9e4333956b6cbeaee2732dd2b49904fba540b472963c8003c8086c7
 
 Name:           claude-desktop
-Version:        1.17377.1
+Version:        1.18286.0
 Release:        1%{?dist}
 Summary:        Desktop application for Claude.ai, repackaged from the official Debian package
 
